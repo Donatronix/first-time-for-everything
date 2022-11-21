@@ -12,7 +12,10 @@ class Profile extends Model
     use HasFactory;
     use LadaCacheTrait;
 
+    protected $table = 'profiles';
+
     protected $fillable = [
+        'description',
         'user_id',
     ];
 
